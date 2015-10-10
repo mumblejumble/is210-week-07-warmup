@@ -3,7 +3,7 @@
 """If and Else Statement"""
 
 
-def bool_to_str(bval):
+def bool_to_str(bval=True):
     """If and Else Statement
     This function returns a 'Yes' or 'No' value, equivalent of truthy and
     falsy values.
@@ -28,9 +28,8 @@ def bool_to_str(bval):
         'No'
 
     """
-    aye_or_nay = 0
-    if bval == True:
-        aye_or_nay = 'Yes'
+    if bval:
+        aye_nay = 'Yes'
     else:
-        aye_or_nay = 'No'
-    return aye_or_nay
+        aye_nay = 'No'
+    return aye_nay
