@@ -5,6 +5,7 @@
 
 import decimal
 
+
 def lexicographics(to_analyze):
     """This is a for loop for a simple data.
 
@@ -31,11 +32,13 @@ def lexicographics(to_analyze):
 
     """
     split_comma = to_analyze.split('\n')
+    sum_line = 0
     length_list = []
     for item in split_comma:
         line_length = len(item.split(' '))
+        sum_line += line_length
         length_list.append(line_length)
     max_num = max(length_list)
     min_num = min(length_list)
-    avg_num = (decimal.Decimal(max_num) + min_num) / 2
+    avg_num = decimal.Decimal(sum_line) / len(split_comma)
     return max_num, min_num, avg_num
