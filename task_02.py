@@ -3,7 +3,7 @@
 """If and Else Statement"""
 
 
-def bool_to_str(bval=True):
+def bool_to_str(bval):
     """If and Else Statement
     This function returns a 'Yes' or 'No' value, equivalent of truthy and
     falsy values.
@@ -17,6 +17,10 @@ def bool_to_str(bval=True):
     Examples:
         >>>import task_02
         >>>task_02.bool_to_str(True)
+        'Yes'
+
+        >>>import task_02
+        >>>task_02.bool_to_str([1, 2])
         'Yes'
 
         >>>import task_02
