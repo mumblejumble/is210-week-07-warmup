@@ -30,6 +30,13 @@ def lexicographics(to_analyze):
         >>> task_03.lexicographics(data.SHAKESPEARE)
         (12, 5, Decimal('8.14'))
 
+        >>> import task_03
+        >>> task_03.lexicographics('''Don't stop, believing,
+        Hold on to that feeling,
+        don't remember the other lyrics.
+        OOooooohhhh.''')
+        (5, 1, Decimal('3.5'))
+
     """
     split_comma = to_analyze.split('\n')
     length_list = []
