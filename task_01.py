@@ -18,6 +18,7 @@ def fibonacci(maxint):
         >>>import task_01
         >>>task_01.fibonacci(10)
         [0, 1, 1, 2, 3, 5, 8]
+
         >>>task_01.fibonacci(22)
         [0, 1, 1, 2, 3, 5, 8, 13, 21]
 
