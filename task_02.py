@@ -28,8 +28,8 @@ def bool_to_str(bval):
         'No'
 
     """
-    aye_or_nay = 'Yes'
-    if bval is True:
+    aye_or_nay = 0
+    if bval == True:
         aye_or_nay = 'Yes'
     else:
         aye_or_nay = 'No'
